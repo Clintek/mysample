@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="login" href="login.html">
+</head>
+<body>
+    <style>
+
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    header{
+        width: 100%;
+        display: flex;
+        background-color: brown;
+        position: fixed;
+        padding: 0 20px;
+    }
+    
+    header nav{
+        padding-left: 650px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header a.logo{
+        padding-left: 20px;
+    color: rgb(248, 249, 250);
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 60px;
+    cursor: pointer;
+    }
+    
+    nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: .5s;
+    }
+    
+    
+    nav ul li{
+        line-height: 60px;
+        margin: 0 5px;
+    }
+    
+    nav ul li a{
+        color: aliceblue;
+        font-size: 18px;
+        padding: 5px 13px;
+        text-transform: uppercase;
+        border-radius: 4px;
+    }
+    
+    nav ul li a:hover{
+        background-color: black;   
+    }
+    
+    main{
+        width: 100%;
+        height: 100vh;
+        scroll-behavior: smooth;
+    overflow-y: scroll;
+    
+    }
+    
+    section{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 100px;
+    }
+    
+    section#home{
+        background-image: url(./PICTURE/COVER.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    section#about{
+    background: black;
+    color: aliceblue;
+    }
+    
+    section h1, 
+    section h2{
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-size: 60px;
+    
+    }
+    
+    section#services{
+        background-image: url(./pic/front1.jpg);
+        color: black;
+        background: rgb(144, 75, 227);
+    }
+    
+    section#contacts{
+        background: black;
+        color: rgb(216, 235, 251);
+    }
+    
+    section#feedback{
+        background: rgb(165, 20, 20);
+        color: antiquewhite;
+    }
+    
+    section p{
+        padding: 50px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        background-color: aliceblue;
+    }
+    
+    section h3{
+        color: brown;
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    section h3:hover{
+        transition: .5s;
+        background: black;
+        border-radius: 12px;
+        padding: 15px;
+    
+    }
+    
+    .header{
+        background-color: rgb(242, 241, 244);
+        background-size: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+    }
+    
+    .header h1:hover{
+        background-color: rgb(110, 6, 6);
+        color: rgb(245, 240, 240);
+        transition: .5s;
+        
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 30px 500px;
+    }
+    
+    .navbar ul li a{
+        color: rgb(135, 7, 7);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .navbar ul li a:hover{
+        color: black;
+        transition: .3s;
+    }
+    
+     
+    
+        h1{
+            color: rgb(197, 7, 7);
+            padding-top: 30px;
+            font-weight: bold;
+            cursor: pointer;
+           
+        }
+    
+        p{
+            color: rgb(35, 11, 1);
+            padding-top: 15px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        img-src{
+            size: 50px;
+        
+        }
+    
+        
+    input{
+         color: rgb(0, 0, 0);  
+         padding: 3%;
+         padding-left: 75%;
+         margin-top: 4%;
+          
+        }
+    
+        form p {
+            background: none;
+            color: white;
+            padding: 3px;
+        border-radius: 100px;
+        margin-top: 15px;
+        font-size: 25px;
+    
+        }
+    
+        button{
+            padding: 20px;
+            margin-top: 5%;
+        }
+    
+        .HDTEXT h1{
+            font-size: 50px;
+            color: white;
+            }
+    
+            .placeholder{
+    padding-right: 15%;
+            }
+
+            
+           </style>
+  <header>
+    <a href="#" class="logo">SOGTECH IT</a>
+<nav>
+
+<ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="#feedback">CONTACTS</a></li>
+    <li><a href="#contacts">FEEDBACK</a></li>
+</ul>  
+
+</nav>
+  </header>
+
+ <main>
+    <section id="home">
+<h2>WELCOME TO SOGTECH</h2>
+<h3>Your one stop shop for IT skill aquisation</h3>
+    </section>
+
+    <section id="about">
+<h2>About</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vel
+     maxime, eaque autem doloremque perferendis, quis nihil, 
+     repellat molestiae quasi quibusdam est. Quos aspernatur 
+     quis tempore pariatur cupiditate magni numquam et aut, 
+     qui nisi rerum necessitatibus fugit ducimus cum consequatur
+      animi. Excepturi sequi saepe autem asperiores optio iste 
+      nobis nesciunt molestiae soluta libero at magnam aliquam 
+      totam, quod consequatur deleniti, necessitatibus laudantium
+       ad facilis provident, placeat perspiciatis unde aut nihil? 
+       Facilis sit sed, consectetur dolorum illo vitae nulla! Atque 
+       maiores voluptas impedit ut corporis nihil quidem corrupti! 
+       Provident blanditiis magni cupiditate vero illum soluta ipsa 
+       quas quidem. Sint nostrum tempora reprehenderit dolores sunt fugit, nisi corrupti eius, incidunt voluptas explicabo totam aliquam vel. Commodi voluptatem ratione earum maxime autem tempore error voluptate. Ipsum delectus sapiente eligendi, voluptate libero esse numquam eum veniam eius, tempora alias. Deleniti rem molestias sed sint at dicta animi id dignissimos voluptate fuga maiores, libero, vero hic amet fugit. Quisquam, labore dolore recusandae aliquam minima molestiae repudiandae eligendi numquam sit officiis quo deleniti non, vel nam et inventore rem? Voluptatem facere quas doloremque! Deserunt dolorum commodi pariatur neque asperiores harum, odit id quibusdam aspernatur 
+    quo nam fuga quisquam sed quam aliquid dolor, 
+    dicta sunt molestias! Magnam!</p>
+    </section>
+
+    <section id="services">
+<h2>Services</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Eius explicabo eos voluptates? Autem explicabo ratione minus 
+    itaque harum deleniti earum consectetur sit officia, ad vitae 
+    culpa odio aliquam, est iusto eaque sunt. Incidunt eveniet fuga 
+    officiis, provident iusto iste asperiores velit? Recusandae, laboriosam? 
+    Nostrum eius inventore laudantium vero veniam tempore illo corporis, quaerat
+     cum consequuntur unde et eos voluptates in officia dolorum, iste esse optio? Reiciendis asperiores aliquid officiis, pariatur impedit laborum. Iste, officiis! Facilis, veniam nemo repellat corporis asperiores tempore consequatur! Hic dignissimos deserunt sit expedita minus, repudiandae, earum cumque amet quos temporibus enim. Rerum consectetur natus ex pariatur facere illo dolorem ea? Explicabo culpa assumenda consequuntur, porro voluptate perferendis, adipisci, provident ex quia inventore nisi voluptates officia dignissimos. Labore repellendus inventore vitae eaque, deleniti numquam ex maiores, itaque provident recusandae quas, fugiat soluta. Provident ducimus inventore ut distinctio quae delectus nam, illum blanditiis molestias vel nisi tempore id cumque mollitia. Consequuntur quisquam veritatis, velit, saepe placeat omnis autem libero quod tenetur dignissimos adipisci sunt obcaecati tempora nulla voluptate repudiandae mollitia ad eius quo culpa dolorum et! Fuga eveniet deleniti debitis voluptatem? Cum, assumenda aliquid. Aliquam tenetur consectetur quas blanditiis fuga 
+    asperiores dicta saepe, quasi itaque repudiandae, 
+    consequatur voluptatum.</p>
+    </section>
+
+    <section id="feedback">
+
+
+<div class="myform">
+    <div class="HDTEXT">
+        <h1>HOW CAN WE HELP YOU</h1>
+    </div>
+    <form action="submit.html">
+        <p>Phone Number</p>
+        <input type="text" name="tel number" placeholder="tel number">
+        <p>Email</p>
+        <input type="text" name="email" placeholder="email">
+        <p>Social Media</p>
+        <input type="text" name="facebook" placeholder="facebook">
+        <p>Address</p>
+        <input type="text" name="location" placeholder="location">
+       
+        <button type="submit.html">LOGIN</button>
+        
+    
+    </form>
+
+
+   </div>
+    </section>
+
+
+    <section id="contacts">
+<h2>Feedback</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Ducimus sunt ut maxime est aliquam veritatis qui alias molestiae 
+    amet dicta sequi, at iusto reiciendis, culpa nisi placeat. Ipsam 
+    ipsa harum reprehenderit possimus deserunt officia quos iusto! Voluptatem 
+    esse ipsum quos necessitatibus deleniti, eius expedita repellat ut mollitia 
+    beatae officiis modi ullam vel minima asperiores officia harum similique error labore laborum consectetur. Repudiandae nemo dicta facilis voluptatibus voluptate explicabo, enim inventore quasi facere reprehenderit aliquam, sit corporis veritatis fugit nam? Illum et illo consequatur est. Tempore sequi, aliquam facilis suscipit sit harum quibusdam cupiditate vitae 
+    adipisci autem eligendi optio unde obcaecati?</p>
+    </section>
+
+    <div class="login-form">
+        <form action="login.html">
+        <button type="submit">Back</button>
+    </form>
+
+    </div>
+
+ </main>
+    
+</body>
+</html>
